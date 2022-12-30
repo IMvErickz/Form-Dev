@@ -38,8 +38,6 @@ export function Informations() {
                                 Nome: {infos.Nome} <br/>
                                 Sobrenome: {infos.Sobrenome} <br/>
                                 Idade: {infos.Idade}
-                                
-                                
                             </li>
                         )
                     })}
