@@ -13,10 +13,6 @@ export function Home() {
     const [name, setName] = useState('')
     const [lasName, setlastName] = useState('')
     const [age, setAge] = useState('')
-
-    console.log(name)
-    console.log(lasName)
-    console.log(age)
     
 
     async function createPerson(event: FormEvent) {
