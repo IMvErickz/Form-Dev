@@ -5,9 +5,15 @@ import { Button } from "../components/button"
 import { Header } from "../components/header"
 import { api } from "../lib/axios"
 
+interface InfoProps{
+    Nome: String
+    Sobrenome: String
+    Idade: String
+}
+
 export function Informations() {
 
-    const [info, setInfo] = useState([])
+    const [info, setInfo] = useState<InfoProps[]>([])
     console.log(info)
 
     const getInformation = api.get('/getInformation')
@@ -33,7 +39,6 @@ export function Informations() {
                     {info.map(infos => {
                         return (
                             <li className="text-white text-2xl" id="li"
-                            key={infos}
                             >
                                 Nome: {infos.Nome} <br/>
                                 Sobrenome: {infos.Sobrenome} <br/>
